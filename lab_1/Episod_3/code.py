@@ -77,6 +77,6 @@ for i in range(1, 11):
     bottom += new_data_group[key]
 axs[1].set_title('Marks per group')
 
-axs[0].legend()
-axs[1].legend()
+axs[0].legend(loc=1)
+axs[1].legend(loc=1)
 plt.show()

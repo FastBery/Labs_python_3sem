@@ -37,7 +37,8 @@ for i in axs:
     i.set_xlim(minx, maxx)
     i.set_ylim(miny, maxy)
     i.grid(linestyle='-')
-    i.set_xticks(np.arange(minx, maxx, step=1.5))
-    i.set_yticks(np.arange(miny, maxy, step=(maxy - miny)/10))
+    i.set_xticks(np.arange(minx, maxx, step=1))
+    i.set_yticks(np.arange(-10.5, 12.5, step=1.5))
 
+plt.subplots_adjust(wspace=0.4, hspace=0.4)
 plt.show()
