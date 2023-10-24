@@ -7,7 +7,7 @@ data_group = {}
 data = []
 #reading data
 with open('students.csv', 'r') as f:
-    data = [j.split(';') for j in [i.replace('\n', '') for i in f.readlines()]]
+    data = [j.split(';') for j in [i for i in f.readlines()]]
 #distibuting data for preps and groups
 for i in data:
     prep = i[0]

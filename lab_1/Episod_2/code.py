@@ -5,7 +5,7 @@ with open('data.dat', 'r') as f:
    for line in f:
     N += 1
 N = int(N/2)
-fig, axs = plt.subplots(nrows=int(N/2), ncols=2, dpi=100)
+fig, axs = plt.subplots(nrows=int(N/2), ncols=2, dpi=100, figsize=(12, 9))
 
 data = []
 
@@ -40,5 +40,6 @@ for i in axs:
     i.set_xticks(np.arange(minx, maxx, step=1))
     i.set_yticks(np.arange(-10.5, 12.5, step=1.5))
 
-plt.subplots_adjust(wspace=0.4, hspace=0.4)
+plt.subplots_adjust(wspace=0.2, hspace=0.4)
+fig.savefig('Figuer.png', dpi=300)
 plt.show()
